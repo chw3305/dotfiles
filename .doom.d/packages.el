@@ -62,3 +62,5 @@
 (package! tldr)
 
 (package! bible-gateway)
+
+(package! org-pomodoro)
