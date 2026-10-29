@@ -66,14 +66,14 @@
   (require 'org-habit)
   (add-to-list 'org-modules 'org-habit))
 
-(setq scroll-margin 10        ; start scrolling when cursor is 8 lines from edge
+(setq scroll-margin 15        ; start scrolling when cursor is 8 lines from edge
       scroll-conservatively 1000  ; never recenter suddenly
       scroll-step 1)         ; scroll line-by-line
 
 (remove-hook 'doom-first-buffer-hook #'smartparens-global-mode)
 (setq doom-font (font-spec :family "Menlo" :size 18))
 ;;---------------
-;;(setq ispell-dictionary "en_GB")
+(setq ispell-dictionary "en_GB")
 
 (electric-indent-mode -1)
 

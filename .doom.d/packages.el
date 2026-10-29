@@ -64,3 +64,5 @@
 (package! bible-gateway)
 
 (package! org-pomodoro)
+
+;;(package! denote-org)

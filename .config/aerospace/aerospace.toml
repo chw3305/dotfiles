@@ -5,17 +5,27 @@
 # Fallback value (if you omit the key): config-version = 1
 config-version = 2
 
+
+
+
+
+
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+   # 'exec-and-forget sketchybar',
+    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
 ]
+
 
 
 # On workspace change: update the SketchyBar highlight + tear down the showpiece
 # audio (quit Background Music, restore output) when leaving WS9. See
 # bin/on-workspace-change.
-exec-on-workspace-change = ['/bin/bash', '-c', '$HOME/dev/macos-rice/bin/on-workspace-change']
+
+exec-on-workspace-change = ['/bin/bash', '-c', '$HOME/dev/macos-rice/bin/on-workspace-change',
+#'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+]
 
 
 # Start AeroSpace at login
@@ -80,12 +90,12 @@ on-mode-changed = []
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 3 
-    inner.vertical =   3  
-    outer.left =       3 
-    outer.bottom =     3 
-    outer.top =        3 
-    outer.right =      3 
+    inner.horizontal = 4   
+    inner.vertical =   4      
+    outer.left =       4     
+    outer.bottom =     4     
+    outer.top =        4     
+    outer.right =      4     
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
