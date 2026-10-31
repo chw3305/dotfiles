@@ -9,7 +9,6 @@
  (setq user-full-name "chw_05"
        user-mail-address "casperhawy@gmail.com")
 
-
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
 ;; - `doom-font' -- the primary font to use
@@ -18,6 +17,8 @@
 ;;   presentations or streaming.
 ;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
+
+
 ;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
@@ -35,6 +36,8 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-gruvbox)
 
+;;(setq doom-font (font-spec :family "JetBrains Mono" :size 14 )
+;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
